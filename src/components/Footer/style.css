@@ -1,0 +1,55 @@
+strong {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3f51b5;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #1c2331;
+}
+
+@media (max-width: 768px) {
+    .post {
+        width: 40%;
+    }
+}
+
+@media (max-width: 425px) {
+    .post {
+        width: 80%;
+    }
+}
+
+img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+
+
+
+

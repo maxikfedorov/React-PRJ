@@ -1,16 +1,17 @@
 import React from 'react';
+import Header from "../components/Header";
+import Dynamic from "../components/Dynamic";
+import Footer from "../components/Footer";
 
 
 const About = () => {
     return (
 
-            <div className="about-main">
+        <div>
+            <Header/>
 
-                <a href="/posts">
-                    <button>На главную</button>
-                </a>
-
-            </div>
+            <Footer/>
+        </div>
 
 
     );

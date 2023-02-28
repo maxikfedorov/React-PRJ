@@ -1,20 +1,18 @@
 import React from 'react';
 import Header from "../components/Header";
-import Dynamic from "../components/Dynamic";
+
 import Footer from "../components/Footer";
+import PostBoard from "../components/PostBoard";
 
 
-const About = () => {
+const PostsPage = () => {
     return (
-
-        <div>
+        <div className="div-page">
             <Header/>
-
+            <PostBoard/>
             <Footer/>
         </div>
-
-
     );
 };
 
-export default About;
+export default PostsPage;

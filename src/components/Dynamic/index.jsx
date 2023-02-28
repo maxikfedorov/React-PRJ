@@ -21,7 +21,7 @@ const Dynamic = () => {
 
     return (
 
-        <div className="dynamic-main">
+        <main className="dynamic-main">
 
             <form onSubmit={handleSubmit}>
                 <label>
@@ -44,7 +44,7 @@ const Dynamic = () => {
                     </li>
                 ))}
             </ul>
-        </div>
+        </main>
     );
 };
 

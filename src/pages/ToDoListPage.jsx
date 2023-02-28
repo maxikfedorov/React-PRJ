@@ -1,17 +1,16 @@
 import React from 'react';
 import Header from "../components/Header";
-import PostBoard from "../components/PostBoard";
+import Dynamic from "../components/Dynamic";
 import Footer from "../components/Footer";
 
-
-const Posts = () => {
+const ToDoListPage = () => {
     return (
-        <div className="Posts-Main">
+        <div className={"div-page"}>
             <Header/>
-            <PostBoard/>
+            <Dynamic/>
             <Footer/>
         </div>
     );
 };
 
-export default Posts;
+export default ToDoListPage;

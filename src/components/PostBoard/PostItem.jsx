@@ -10,7 +10,7 @@ const PostItem = (props) => {
                 </div>
             </div>
             <div className="post-content">
-                <a href="/about">
+                <a href="./about">
                     <button> Подробнее</button>
                 </a>
             </div>

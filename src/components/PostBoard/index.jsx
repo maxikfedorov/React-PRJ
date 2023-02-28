@@ -1,10 +1,12 @@
 import React from 'react';
 import PostItem from "./PostItem";
-import '../styles/style.css'
+import '../../styles/style.css'
+import './style.css'
 
-const PostBoard = () => {
+const PostBoard = (userData) => {
+    const {email, password} = userData;
     return (
-        <div className='post-board'>
+        <main className='post-board'>
             <PostItem post={{id: 1, title: 'Javascript', body: 'Description'}}/>
             <PostItem post={{id: 2, title: 'React', body: 'Javascript library for building user interfaces'}} />
             <PostItem post={{id: 3, title: 'Node.js', body: 'JavaScript runtime built on Chromes V8 JavaScript engine'}} />
@@ -15,9 +17,11 @@ const PostBoard = () => {
             <PostItem post={{id: 8, title: 'Express.js', body: 'Fast, unopinionated, minimalist web framework for Node.js'}} />
             <PostItem post={{id: 9, title: 'MongoDB', body: 'Cross-platform document-oriented database program'}} />
             <PostItem post={{id: 10, title: 'Docker', body: 'Platform for building, deploying, and running applications using containers'}} />
-            <PostItem post={{id: 11, title: 'Redux', body: 'Predictable state container for JavaScript apps'}} />
-        </div>
+            <PostItem post={{id: 11, title: 'Redux-PRJ', body: 'Predictable state container for JavaScript apps'}} />
+            <PostItem post={{id: 12, title: email, body: password}} />
+        </main>
     );
 };
+
 
 export default PostBoard;

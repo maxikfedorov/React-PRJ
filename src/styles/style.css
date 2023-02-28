@@ -1,69 +1,44 @@
 * {
     box-sizing: border-box;
+
+}
+
+html{
+    height: 100%;
 }
 
 body
 {
     height: 100%;
-    display: flex;
-    flex-direction: column;
     margin: 0;
-
-}
-
-.about-main {
-    margin-top: 10%;
-    margin-left: 50%;
-}
-
-.about-main button{
-    width: 150%;
-    height: 150%;
 }
 
 #root {
-    display: flex;
-    justify-content: space-between;
     height: 100%;
+    width: 100%;
 }
 
-.Posts-Main {
+header{
+    flex-grow: 0;
+}
+
+main{
+    flex-grow: 1;
+}
+
+footer{
+    flex-grow: 0;
+}
+
+.div-page {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.post-board {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    min-height: 100%;
 
 }
 
-.post {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding: 20px;
-    margin: 3% auto;
-
-    border-radius: 10px;
-    background-color: #f2f2f2;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.post-board{
-    margin: 5em;
-}
-
-.post-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px 0;
-}
 
 strong {
     font-size: 20px;
@@ -95,13 +70,6 @@ button:hover {
         width: 80%;
     }
 }
-
-img {
-    height: 40px;
-    margin-right: 10px;
-}
-
-
 
 
 

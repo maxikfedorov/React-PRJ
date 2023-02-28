@@ -1,17 +1,15 @@
 import React from "react";
-import Posts from "./pages/Posts";
 import {Route, Routes} from "react-router-dom";
-import About from "./pages/About";
-import ToDoList from "./pages/ToDoList";
+import { routes } from './routes';
 
 function App() {
 
     return (
 
             <Routes>
-                <Route path="/posts" element={<Posts/>}/>
-                <Route path="/about" element={<About/>}/>
-                <Route path="/dynamic" element={<ToDoList/>}/>
+                {routes.map((route, index) => (
+                    <Route key={index} path={route.path} element={route.element} />
+                ))}
             </Routes>
 
     );
